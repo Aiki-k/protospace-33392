@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :comments
+  # delete '/prototypes/:id', to: 'prototypes#destroy'
   devise_for :users
   root to: 'prototypes#index'
   resources :users, only: :show
